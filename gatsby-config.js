@@ -1,3 +1,35 @@
+require('dotenv').config()
+
+const myQuery = `{
+  swapi {
+    allPersons {
+      name
+      birthYear
+      height
+      species {
+        name
+      }
+      mass
+      homeworld {
+        name
+      }
+      vehicles {
+        name
+      }
+    }
+  }
+}`
+
+const queries = [
+  {
+    query: myQuery,
+    transformer: ({ data }) => data.swapi.allPersons.map( node => {
+      return node
+    }), // optional
+    indexName: 'star-wars-characters', // overrides main index name, optional
+  },
+];
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,6 +37,24 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.APP_ID,
+        apiKey: process.env.API_KEY,
+        indexName: 'star-wars-characters', // for all queries
+        queries,
+        chunkSize: 10000, // default: 1000
+      },
+    },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: "SWAPI",
+        fieldName: "swapi",
+        url: "https://api.graphcms.com/simple/v1/swapi"
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
