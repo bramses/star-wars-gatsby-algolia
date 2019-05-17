@@ -1,39 +1,17 @@
 import React from "react"
+import Character from "../components/Character"
+import { InstantSearch, Hits, SearchBox } from "react-instantsearch-dom"
+import algoiasearch from "algoliasearch/lite"
 
-import Layout from "../components/layout"
-import { graphql } from "gatsby";
+const searchClient = algoiasearch('E3BK84RLOX', 'd0c29da656425b95e8ae948c9e476c07')
 
-
-const IndexPage = ({ data }) => (
-  <Layout>
-    <div>
-      {data.swapi.allPersons.map(person => {
-        return <p>{person.name}</p>
-      })}
-    </div>
-  </Layout>
+const IndexPage = () => (
+  <div>
+    <InstantSearch indexName="characters" searchClient={searchClient}>
+        <SearchBox />
+        <Hits hitComponent={Character} />
+    </InstantSearch>
+  </div>
 )
 
 export default IndexPage
-
-export const query = graphql`
-{
-  swapi {
-    allPersons {
-      name
-      birthYear
-      height
-      species {
-        name
-      }
-      mass
-      homeworld {
-        name
-      }
-      vehicles {
-        name
-      }
-    }
-  }
-}
-`
