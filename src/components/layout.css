@@ -622,6 +622,28 @@ pre tt:after {
   }
 }
 
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .star-wars {
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
@@ -631,6 +653,48 @@ pre tt:after {
   perspective: 400px;
 }
 
+.star-wars-facet {
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 200%;
+  font-weight: 250;
+  letter-spacing: 6px;
+  perspective: 400px;
+}
+
+.star-wars-stats {
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin-left: 5%;
+  perspective: 400px;
+}
+
+.star-wars-input {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  background: none;
+  width: 90%;
+  height: 55px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  color: gold;
+  margin: 0 5%;
+  margin-top: 25px;
+  border-bottom: #f34e4e 4px solid;
+}
+
+.ais-InfiniteHits-loadMore {
+  border-radius: 2px;
+  margin-left: 30%;
+  margin-bottom: 10px; 
+}
+
 .star-wars-subtitle {
   color: rgb(75, 213, 238); 
   font-family: 'Pathway Gothic One', sans-serif;
@@ -638,6 +702,13 @@ pre tt:after {
   font-weight: 600;
   letter-spacing: 6px;
   perspective: 400px;
+}
+
+.star-wars-hr{ 
+  height: 3px;
+  color: #feda4a;
+  background-color: #feda4a;
+  border: none;
 }
 
 .ais-Highlight-highlighted {
