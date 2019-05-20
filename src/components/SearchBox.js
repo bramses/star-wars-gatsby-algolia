@@ -1,6 +1,6 @@
 import React from "react"
 
-const SearchBox = ({ currentRefinement, isSearchStalled, refine }) => (
+const SearchBox = ({ currentRefinement, refine }) => (
     <div >
         <input 
             className="star-wars-input"

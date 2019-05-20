@@ -1,6 +1,6 @@
 import React from "react"
 import Character from "../components/Character"
-import { InstantSearch, Hits, Panel, connectStats, connectMenu, connectSearchBox, InfiniteHits } from "react-instantsearch-dom"
+import { InstantSearch, Hits, Panel, connectStats, connectMenu, connectSearchBox } from "react-instantsearch-dom"
 import Stats from '../components/Stats'
 import Menu from '../components/Menu'
 import algoiasearch from "algoliasearch/lite"
@@ -23,10 +23,7 @@ const IndexPage = () => (
         </div>
         <div className="column right">
           <Hits hitComponent={Character} />
-          <InfiniteHits hitComponent={Character} />
         </div>
-
-
       </Panel>
     </InstantSearch>
   </div>

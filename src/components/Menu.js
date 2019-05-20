@@ -1,6 +1,6 @@
 import React from "react"
 
-const Menu = ({ items, currentRefinement, refine }) => (
+const Menu = ({ items, refine }) => (
     <div>
         <p className="star-wars-facet">HOMEWORLD:</p>
         <hr className="star-wars-hr"/>
