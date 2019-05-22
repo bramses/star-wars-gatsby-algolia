@@ -3,12 +3,12 @@ import Character from "../components/Character"
 import { InstantSearch, Hits, Panel, connectStats, connectMenu, connectSearchBox } from "react-instantsearch-dom"
 import Stats from '../components/Stats'
 import Menu from '../components/Menu'
-import algoiasearch from "algoliasearch/lite"
+import algoliasearch from "algoliasearch/lite"
 import SearchBox from '../components/SearchBox'
 import "../components/layout.css"
 
 
-const searchClient = algoiasearch('E3BK84RLOX', 'd0c29da656425b95e8ae948c9e476c07')
+const searchClient = algoliasearch('E3BK84RLOX', 'd0c29da656425b95e8ae948c9e476c07')
 const CustomizedStats = connectStats(Stats)
 const CustomMenu = connectMenu(Menu)
 const CustomSearch = connectSearchBox(SearchBox)
