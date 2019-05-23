@@ -24,6 +24,9 @@ const queries = [
   {
     query: myQuery,
     transformer: ({ data }) => data.swapi.allPersons.map( node => {
+      if (node.birthYear) {
+        node.birthYear = Number(node.birthYear.replace('BBY', ''))
+      }
       return node
     }), // optional
     indexName: 'star-wars-characters', // overrides main index name, optional

@@ -9,7 +9,7 @@ const Character = ({ hit }) => (
         <span className="star-wars-subtitle">Height: {hit.height ? `${hit.height}cm` : 'NO HEIGHT FOUND'}</span>
         <br />
         <br />
-        <span className="star-wars-subtitle">Birth Year: {hit.birthYear ? hit.birthYear.replace('BBY', ' Years Before the Battle of Yavin') : 'NO BIRTH YEAR FOUND'}</span>
+        <span className="star-wars-subtitle">Birth Year: {hit.birthYear ? `${hit.birthYear} Years Before the Battle of Yavin` : 'NO BIRTH YEAR FOUND'}</span>
         <br />
         <br />
         <span className="star-wars-subtitle">Species: {hit.species ? hit.species[0] ? hit.species[0]["name"] ? `${hit.species[0]["name"]}` : 'NO SPECIES FOUND' : 'NO SPECIES FOUND' : 'NO SPECIES FOUND'}</span>
