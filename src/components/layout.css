@@ -7,7 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../images/milkyway.jpg");
+  background-image: url("../images/milkyway2.png");
 }
 article,
 aside,
@@ -689,6 +689,10 @@ pre tt:after {
   border-bottom: #f34e4e 4px solid;
 }
 
+.star-wars-input:focus {
+  outline: none;
+}
+
 .ais-InfiniteHits-loadMore {
   border-radius: 2px;
   margin-left: 30%;
@@ -702,6 +706,11 @@ pre tt:after {
   font-weight: 600;
   letter-spacing: 6px;
   perspective: 400px;
+}
+
+.star-wars-logo {
+  margin: 0 auto;
+  display: block;
 }
 
 .star-wars-hr{ 
