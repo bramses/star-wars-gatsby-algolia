@@ -644,6 +644,8 @@ pre tt:after {
   clear: both;
 }
 
+/*** Custom CSS below **/
+
 .star-wars {
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
@@ -706,6 +708,22 @@ pre tt:after {
   font-weight: 600;
   letter-spacing: 6px;
   perspective: 400px;
+}
+
+.star-wars-li {
+  float: left;
+  list-style: none;
+}
+
+.star-wars-li-a {
+  display: block;
+  font-size: 125%;
+  color: white;
+  font-weight: bold;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .star-wars-logo {

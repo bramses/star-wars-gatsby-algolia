@@ -1,8 +1,8 @@
 import React from "react"
 
-const Menu = ({ items, refine }) => (
+const Menu = ({ items, refine, title }) => (
     <div>
-        <p className="star-wars-facet">HOMEWORLD:</p>
+        <p className="star-wars-facet">{title}</p>
         <hr className="star-wars-hr"/>
         <ul>
             {items.map(item => (
