@@ -649,7 +649,7 @@ pre tt:after {
 .star-wars {
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
+  font-size: 250%;
   font-weight: 600;
   letter-spacing: 6px;
   perspective: 400px;
@@ -658,7 +658,7 @@ pre tt:after {
 .star-wars-facet {
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 200%;
+  font-size: 130%;
   font-weight: 250;
   letter-spacing: 6px;
   perspective: 400px;
@@ -704,7 +704,7 @@ pre tt:after {
 .star-wars-subtitle {
   color: rgb(75, 213, 238); 
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 250%;
+  font-size: 150%;
   font-weight: 600;
   letter-spacing: 6px;
   perspective: 400px;

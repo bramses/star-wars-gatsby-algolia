@@ -1,7 +1,7 @@
 import React from "react"
 
 const Pagination = ({ currentRefinement, nbPages, refine }) => (
-    <ul>
+    <ul style={{'marginLeft': '-20%'}}>
         {new Array(nbPages).fill(null).map((_, index) => {
             const page = index + 1;
             const style = {

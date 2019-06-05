@@ -5,7 +5,7 @@ const SearchBox = ({ currentRefinement, refine }) => (
         <input 
             className="star-wars-input"
             type="search"
-            placeholder="Search for characters or species..."
+            placeholder="Search for characters, planets, or species..."
             value={currentRefinement}
             onChange={event => refine(event.currentTarget.value)}
         />
