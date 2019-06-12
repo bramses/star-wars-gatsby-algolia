@@ -35,9 +35,9 @@ const queries = [
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Galaxy Quest`,
+    description: `Welcome to the Algolia and Gatsby implementation! Here you can see a full demo of how Algolia and Gatsby can be integrated on  a frontend and a backend.`,
+    author: `@algolia`,
   },
   plugins: [
     {

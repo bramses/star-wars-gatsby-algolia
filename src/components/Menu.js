@@ -2,7 +2,7 @@ import React from "react"
 
 const Menu = ({ items, refine, title }) => (
     <div>
-        <p className="star-wars-facet">{title}</p>
+        <p className="star-wars-facet" style={{ marginLeft: '15px'}}>{title}</p>
         <hr className="star-wars-hr"/>
         <ul>
             {items.map(item => (
