@@ -6,6 +6,8 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => (
             const page = index + 1;
             const style = {
                 textDecoration: currentRefinement === page ? 'underline' : '',
+                backgroundColor: currentRefinement === page ? '#f34e4e' : '',
+                borderRadius: '30px'
             };
 
             return (
