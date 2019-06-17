@@ -18,7 +18,9 @@ const CustomPagination = connectPagination(Pagination)
 
 const IndexPage = () => (
   <div className="row">
-    <img src={logo} alt="Algolia Wars Logo" className="star-wars-logo" />
+    <a href="https://github.com/bramses/star-wars-gatsby-algolia">
+      <img src={logo} alt="Algolia Wars Logo" className="star-wars-logo" />
+    </a>
     <InstantSearch indexName="star-wars-characters" searchClient={searchClient}>
       <Panel>
         <CustomSearch />
