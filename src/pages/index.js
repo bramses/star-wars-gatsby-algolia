@@ -1,6 +1,6 @@
 import React from "react"
 import Character from "../components/Character"
-import { InstantSearch, Hits, Panel, connectStats, connectMenu, connectSearchBox, connectPagination } from "react-instantsearch-dom"
+import { InstantSearch, Hits, Panel, connectStats, connectMenu, connectSearchBox, connectPagination, PoweredBy } from "react-instantsearch-dom"
 import Stats from '../components/Stats'
 import Menu from '../components/Menu'
 import Pagination from '../components/Pagination'
@@ -23,6 +23,7 @@ const IndexPage = () => (
       <Panel>
         <CustomSearch />
         <CustomStats />
+        <PoweredBy />
         <div className="column left">
           <CustomMenu title="HOMEWORLD" attribute="homeworld.name" />
           <br />

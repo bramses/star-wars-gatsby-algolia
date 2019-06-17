@@ -742,3 +742,9 @@ pre tt:after {
   font-style: normal;
   background-color: #f34e4e;
 }
+
+.ais-PoweredBy {
+  margin-top: -50px;
+  float: right;
+  padding-right: 4em;
+}
