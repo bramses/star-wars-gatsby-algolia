@@ -631,10 +631,11 @@ pre tt:after {
 
 .left {
   width: 25%;
+  margin-left: 4%;
 }
 
 .right {
-  width: 75%;
+  width: 71%;
 }
 
 /* Clear floats after the columns */
@@ -706,6 +707,8 @@ pre tt:after {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 150%;
   font-weight: 600;
+  display: block;
+  margin-bottom: 13px;
   letter-spacing: 6px;
   perspective: 400px;
 }
