@@ -15,8 +15,10 @@ This experience is built off of the [Gatsby Default Starter](https://github.com/
 ### To Run:
 
 `npm install`
+
 `npm start`
 
 To rebuild the Algolia index:
-
-`npm build`
+Set up a [Algolia Index](https://www.algolia.com/doc/api-client/getting-started/instantiate-client-index/?language=javascript#init-index) here!  
+Once this is done, use
+`npm build` to set up your index
