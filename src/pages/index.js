@@ -9,13 +9,16 @@ import SearchBox from '../components/SearchBox'
 import "../components/layout.css"
 import logo from '../images/algolia-logo.png'
 
-
+// instansiating our Algolia index
 const searchClient = algoliasearch('E3BK84RLOX', 'd0c29da656425b95e8ae948c9e476c07')
+
+// custom connector components
 const CustomStats = connectStats(Stats)
 const CustomMenu = connectMenu(Menu)
 const CustomSearch = connectSearchBox(SearchBox)
 const CustomPagination = connectPagination(Pagination)
 
+// the index page sets up our React Instant Search implementation
 const IndexPage = () => (
   <div className="row">
     <a href="https://github.com/bramses/star-wars-gatsby-algolia">

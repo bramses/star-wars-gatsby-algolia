@@ -1,5 +1,10 @@
 import React from "react"
 
+/*
+currentRefinement - what page do we currently have selected
+nbPages - total # of pages
+refine - function run onClick to select a new page
+*/
 const Pagination = ({ currentRefinement, nbPages, refine }) => (
     <ul style={{'marginLeft': '0%'}}>
         {new Array(nbPages).fill(null).map((_, index) => {

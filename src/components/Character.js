@@ -1,6 +1,10 @@
 import React from "react"
 import { Highlight } from "react-instantsearch-dom"
 
+/**
+ * 
+ * @param {Object} hit - the hit is the singleton result from a query passed into the component
+ */
 const Character = ({ hit }) => (
     <div>
         <h2 className="star-wars">
