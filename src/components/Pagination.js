@@ -18,7 +18,6 @@ const Pagination = ({ currentRefinement, nbPages, refine }) => (
             return (
                 <li key={index} className="star-wars-li">
                     <a
-                        href="#"
                         style={style}
                         className="star-wars-li-a"
                         onClick={event => {

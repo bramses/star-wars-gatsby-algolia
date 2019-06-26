@@ -16,7 +16,7 @@ const Menu = ({ items, refine, title }) => (
         <ul>
             {items.map(item => (
                 <li style={{ listStyle: 'none' }} key={item.value}>
-                    <a href="#" style={{ fontWeight: item.isRefined ? 'bold' : '', textDecoration: 'none' }} className="star-wars-facet" onClick={event => {
+                    <a style={{ fontWeight: item.isRefined ? 'bold' : '', textDecoration: 'none' }} className="star-wars-facet" onClick={event => {
                         event.preventDefault();
                         refine(item.value);
                     }}>
